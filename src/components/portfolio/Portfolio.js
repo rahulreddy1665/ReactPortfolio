@@ -10,7 +10,6 @@ export default function Portfolio() {
         {info.portfolio.map((project, index) => (
           <Grid item xs={12} md={6} mt={6} key={index}>
             <PortfolioBlock
-              image={project.image}
               live={project.live}
               source={project.source}
               title={project.title}
