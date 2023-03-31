@@ -26,7 +26,7 @@ export const info = {
   ],
   socials: [
     {
-      link: 'https://andy8647.com/andy.pdf', // this should be https://yourname.com/resume.pdf once you've deployed
+      link: 'https://rahulreddy10.netlify.app/resume.pdf', // this should be https://yourname.com/resume.pdf once you've deployed
       icon: 'fa fa-user-circle',
       label: 'resume',
     },
