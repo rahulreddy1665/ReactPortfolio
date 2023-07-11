@@ -65,7 +65,6 @@ export const info = {
       'Flutter',
       'Material UI',
       'Nodejs',
-    
     ],
     databases: ['MySQl',],
     cloudServices: ['AWS S3', 'AWS EC2','Heroku', 'Netlify'],
