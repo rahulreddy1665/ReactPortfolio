@@ -51,8 +51,7 @@ export const info = {
       label: 'twitter',
     },
   ],
-  bio: `Hello! I am a React Native developer with 2 years of experience in React Native and React JS. My skills include developing cross-platform mobile applications, using popular libraries and tools such as Redux, Axios.
-  I have experience in implementing UI designs, integrating APIs, handling data persistence & mobile development processes such as App Store and Google Play Store submission.`,
+  bio: `Hello! I am Rahul Reddy, a skilled React Native developer with 2 years of experience in React Native and React JS. I specialize in developing cross-platform mobile applications, utilizing popular libraries and tools like Redux and Axios. With a strong background in UI design implementation and API integration, I excel in handling data persistence and the mobile development processes, including App Store and Google Play Store submission.`,
   
   
   skills: {
@@ -66,7 +65,7 @@ export const info = {
       'Flutter',
       'Material UI',
       'Nodejs',
-      'Mantine'
+    
     ],
     databases: ['MySQl',],
     cloudServices: ['AWS S3', 'AWS EC2','Heroku', 'Netlify'],
@@ -110,18 +109,17 @@ export const info = {
     },
     {
       title: 'React Js Portfolio',
-      live: null,
-      source: 'https://github.com/rahulreddy1665/ReactPortfolio',
-      
+      live: "https://rahulreddy10.netlify.app/",
     },
     {
-      title: 'Ecommerce Application',
-      live: "https://play.google.com/store/apps/details?id=com.lifestylesapp", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+      title: 'Task Manager(Flutter)',
+      live: null,
+      source:'https://github.com/rahulreddy1665/Todo_app_Flutter.git', //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
      
     },
     {
-      title: 'Veterinary application',
-      live:'https://play.google.com/store/apps/details?id=com.readyvetapp',      
+      title: 'Pharmaceutical Website',
+      live:'https://invitehealthspecialities.com/',      
     },
     
   ],
