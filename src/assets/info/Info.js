@@ -41,7 +41,7 @@ export const info = {
       label: 'github',
     },
     {
-      link: 'https://www.linkedin.com/in/rahul-reddy-t-v-ba0806190',
+      link: 'https://www.linkedin.com/in/rahulreddyTV',
       icon: 'fa fa-linkedin',
       label: 'linkedin',
     },
