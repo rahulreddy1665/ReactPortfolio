@@ -17,7 +17,7 @@ export const info = {
     },
     {
       emoji: '📱',
-      text: 'Mobile App Developer at AgileIdc',
+      text: 'React Native Developer at Agilets PVT LTD',
     },
     {
       emoji: '📧',
@@ -26,7 +26,7 @@ export const info = {
   ],
   socials: [
     {
-      link: 'https://rahulreddy10.netlify.app/resume.pdf', // this should be https://yourname.com/resume.pdf once you've deployed
+      link: 'https://rahulreddy10.netlify.app/resume.pdf', 
       icon: 'fa fa-user-circle',
       label: 'resume',
     },
@@ -51,7 +51,7 @@ export const info = {
       label: 'twitter',
     },
   ],
-  bio: `Hello! I am Rahul Reddy, a skilled React Native developer with 2 years of experience in React Native and React JS. I specialize in developing cross-platform mobile applications, utilizing popular libraries and tools like Redux and Axios. With a strong background in UI design implementation and API integration, I excel in handling data persistence and the mobile development processes, including App Store and Google Play Store submission.`,
+  bio: `Hello! I am Rahul Reddy, a skilled React Native developer with 2.6 years of experience in React Native and React JS. I specialize in developing cross-platform mobile applications, utilizing popular libraries and tools like Redux and Axios. With a strong background in UI design implementation and API integration, I excel in handling data persistence and the mobile development processes, including App Store and Google Play Store submission.`,
   
   
   skills: {

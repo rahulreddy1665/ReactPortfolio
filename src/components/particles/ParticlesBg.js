@@ -12,7 +12,7 @@ const ParticlesBg = ({ darkMode }) => {
     await console.log('Particles loaded', container);
   }, []);
 
-  const { background, links, particle } = particleBgColors();
+  const { background, links, particle } = particleBgColors(darkMode);
 
   const [backgroundColor, setBgColor] = useState(background(darkMode));
   const [particleColor, setParticleColor] = useState(particle(darkMode));
@@ -22,7 +22,7 @@ const ParticlesBg = ({ darkMode }) => {
     setBgColor(background(darkMode));
     setParticleColor(particle(darkMode));
     setLinksColor(links(darkMode));
-  }, [darkMode, background, links, particle]);
+  }, [darkMode,background, links, particle]);
 
   return (
     <Particles
@@ -55,10 +55,10 @@ const ParticlesBg = ({ darkMode }) => {
           },
           modes: {
             bubble: {
-              distance: 40,
+              distance: 20,
               duration: 2,
-              opacity: 0.4,
-              size: 40,
+              opacity: 0.7,
+              size: 10,
             },
             push: {
               quantity: 4,
@@ -79,11 +79,7 @@ const ParticlesBg = ({ darkMode }) => {
             enable: true,
             opacity: 0.7,
             width: 2,
-            triangles: {
-              enable: true,
-              color: linksColor,
-              opacity: 0.2,
-            },
+           
           },
           collisions: {
             enable: true,

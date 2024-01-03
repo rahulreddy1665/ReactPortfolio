@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import Style from './BaseLayout.module.scss';
 import Navbar from './Navbar';
 import Home from './home/Home';
@@ -10,9 +10,38 @@ import ParticlesBg from './particles/ParticlesBg';
 
 
 export default function BaseLayout() {
+  let [darkMode, setDarkMode] = useState(false);
+
+  function handleToggleDarkMode() {
+    let oppositeOfCurrentDarkMode = !darkMode;
+    localStorage.setItem('darkMode', `${oppositeOfCurrentDarkMode}`);
+    setDarkMode(oppositeOfCurrentDarkMode);
+
+  }
+
+  useEffect(() => {
+    let detectedDarkMode = JSON.parse(localStorage.getItem('darkMode'));
+    const osDarkModeQuery = window.matchMedia
+      ? window.matchMedia('(prefers-color-scheme: dark)')
+      : null;
+
+    if (detectedDarkMode) {
+      setDarkMode(detectedDarkMode);
+    } else {
+      localStorage.setItem('darkMode', `${!!osDarkModeQuery?.matches}`);
+    }
+
+    const updateDarkMode = (e) => {
+      setDarkMode(e.matches);
+    };
+
+    if (osDarkModeQuery) {
+      osDarkModeQuery.addEventListener('change', updateDarkMode);
+    }
+  }, []);
   return (
-    <Box className={ Style.dark }>
-      <ParticlesBg  />
+    <Box className={darkMode ? Style.dark : Style.light }>
+      <ParticlesBg darkMode={darkMode.valueOf()} />
       <Grid
         container
         display={'flex'}
@@ -21,7 +50,7 @@ export default function BaseLayout() {
         justifyContent={'space-between'}
       >
         <Grid item>
-          <Navbar />
+          <Navbar  darkMode={darkMode} handleClick={handleToggleDarkMode} />
         </Grid>
         <Grid item flexGrow={1}>
           <Routes>
