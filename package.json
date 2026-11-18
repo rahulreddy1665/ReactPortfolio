@@ -49,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "@netlify/plugin-lighthouse": "^6.0.4",
     "prettier": "^2.8.4"
   }
 }

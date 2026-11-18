@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+# Pinned here so Netlify uses v6 (supports Node 18+), not the old
+# UI-installed version that requires Node < 20.
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
