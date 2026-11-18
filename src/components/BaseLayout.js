@@ -7,6 +7,8 @@ import Portfolio from './portfolio/Portfolio';
 import { Route, Routes } from 'react-router-dom';
 import { Box, Grid } from '@mui/material';
 import ParticlesBg from './particles/ParticlesBg';
+import Galaxy from './galaxy/Galaxy';
+import ChatWidget from './ChatWidget/ChatWidget';
 
 
 export default function BaseLayout() {
@@ -56,11 +58,12 @@ export default function BaseLayout() {
           <Routes>
             <Route exact path={'/'} element={<Home  />} />
             <Route exact path={'/about'} element={<About />} />
-            <Route exact path={'/portfolio'} element={<Portfolio />} />
+            <Route exact path={'/portfolio'} element={<Galaxy />} />
           </Routes>
         </Grid>
       
       </Grid>
+      <ChatWidget theme={darkMode ? 'dark' : 'light'} />
     </Box>
   );
 }
